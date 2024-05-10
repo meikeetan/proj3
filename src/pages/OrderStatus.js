@@ -40,7 +40,7 @@ const OrderStatus = () => {
                       <Card.Img
                         src={
                           item.product.images[0].startsWith("uploads/")
-                            ? `http://localhost:5000/${item.product.images[0]}`
+                            ? `https://project3-be.onrender.com/${item.product.images[0]}`
                             : item.product.images[0]
                         }
                         alt={item.product.name}

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Ecommerce Site 🕺
+Welcome to "ecommerce site" – your go-to for shopping enthusiasts and money-spenders who like to keep it real (and stylish)! 👗
+Get ready to dive into a world of trendy threads with "ecommerce site." We're not your average online store – because we're here to wipe out your wallet (in the most fashionable way, of course).
+Why "ecommerce site"? Well, we figured, why not make shopping online as easy as scrolling up and down? And "site"? It's just simple and straightforward like our website.
+Now, you might be thinking, "Why choose 'ecommerce site'?" Honestly, we asked ourselves the same question after a few too many late-night shopping sprees.
+So, if you're up for some guilt-free shopping and a few laughs along the way, hop on board the "ecommerce site" train. Let's make fashion fun again! 💸🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Code Explanation 💬
+The code consist of the following elements:
 
-## Available Scripts
+1. Ecommerce Site
+### pages
+- `Cart.js` & `Checkout.js` & `Payment.js` & `OrderStatus.js` : handle a series of actions from user clicking on item of interest then proceed to add to cart, followed by checkout then payment. `OrderStatus.js` should display the shipping status of item.
+- `Favourite.js` & `Home.js`: to display home as well as clothes of interest
+- `Login.js` & `Signup` & `Profile`: for authentication and editing of user password 
 
-In the project directory, you can run:
+### components
+- `FavouriteList.js`: fetches the clothes of interest and displays it
+- `Header.js`: essentially the navbar
+- `ProductDetail.js` & `ProductList.js` : fetches the products and list it in its respective categories 
 
-### `npm start`
+2. Order
+### components
+- `OrderStatus.js`: fetches order from backend, and onClick it registers orders being shipped
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Backend
+- Contains the models for `AdminUsers` `Cart` `Favourite` `Order` `Product` `User`
+- Contains controllers and routes: controllers to handle business logic, routes for the frontend to access these logics. 
+  
+## Start Shopping!! 🛍️
+CLICK ME >> *https://webstore-rosy.vercel.app/*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Enhancements 💡
+- add a slider so that we don't display all the product listings in one page (e.g. one page only display 9 items)
+- add filter function (e.g. so that users are able to filter items according to price, colour, size)
+- add a search bar function
